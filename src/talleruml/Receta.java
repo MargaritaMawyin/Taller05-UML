@@ -9,10 +9,8 @@ package talleruml;
  *
  * @author margo
  */
-public class TallerUML {
-
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class Receta {
+    protected Datetime fecha;
     
+    protected java.util.Collection PlanNutricional;
 }

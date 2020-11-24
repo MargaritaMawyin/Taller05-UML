@@ -9,10 +9,12 @@ package talleruml;
  *
  * @author margo
  */
-public class TallerUML {
-
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class Medicamento {
+    protected String medicina;
+    protected String dosis;
+    protected String onservaciones;
+    protected int cantidadTotal;
+    protected String unidad;
     
+    protected Receta receta;
 }
