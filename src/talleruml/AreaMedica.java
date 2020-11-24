@@ -5,6 +5,8 @@
  */
 package talleruml;
 
+import java.util.List;
+
 /**
  *
  * @author Kevin Chevez pc
@@ -12,6 +14,8 @@ package talleruml;
 public class AreaMedica {
     protected String especialidad;
     protected float costo;
+    protected List<Doctor> doctores;
+    
 
     public AreaMedica(String especialidad, float costo) {
         this.especialidad = especialidad;
@@ -34,5 +38,7 @@ public class AreaMedica {
         this.costo = costo;
     }
     
-    
+    public void addDoctor(Doctor doctor){
+        this.doctores.add(doctor);
+    }
 }

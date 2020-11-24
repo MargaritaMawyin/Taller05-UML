@@ -5,12 +5,14 @@
  */
 package talleruml;
 
+import org.joda.time.DateTime;
+
 /**
  *
  * @author margo
  */
 public class Receta {
-    protected Datetime fecha;
+    protected DateTime fecha;
     
     protected java.util.Collection PlanNutricional;
 }

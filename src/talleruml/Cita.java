@@ -4,19 +4,21 @@
  * and open the template in the editor.
  */
 package talleruml;
+import org.joda.time.DateTime;
+
 
 /**
  *
  * @author margo
  */
 public class Cita {
-    protected Datetime fecha;
+    protected DateTime fecha;
     protected boolean pagada;
     protected String registroPor ;
     
     protected Paciente paciente; //creo que en Paciente va Cita
 
-    public Cita(Datetime fecha, boolean pagada, String registroPor) {
+    public Cita(DateTime fecha, boolean pagada, String registroPor) {
         this.fecha = fecha;
         this.pagada = pagada;
         this.registroPor = registroPor;
