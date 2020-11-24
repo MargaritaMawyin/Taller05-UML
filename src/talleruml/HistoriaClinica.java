@@ -17,7 +17,7 @@ public class HistoriaClinica {
     protected ArrayList alergias;
     protected ArrayList otros;
    
-    //protected Paciente paciente; creo que en paciente va HistoriaClinica
+    protected Paciente paciente;
 
     public HistoriaClinica(int nro, ArrayList enfermedades, ArrayList alergias, ArrayList otros) {
         this.nro = nro;
