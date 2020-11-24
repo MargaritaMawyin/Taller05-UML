@@ -14,6 +14,8 @@ import java.util.Collection;
 public class Receta {
     protected Datetime fecha;
     
+    protected Paciente paciente;
+    
     protected java.util.Collection PlanNutricional;
 
     public Datetime getFecha() {
