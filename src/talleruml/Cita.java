@@ -9,10 +9,14 @@ package talleruml;
  *
  * @author margo
  */
-public class TallerUML {
-
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class Cita {
+    protected DateTime fecha;
+    protected boolean pagada;
+    protected String registroPor ;
     
+    protected Paciente paciente;
+    
+    public Pago realizarPago (Pago pago){
+        
+    }
 }

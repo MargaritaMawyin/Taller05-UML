@@ -5,14 +5,16 @@
  */
 package talleruml;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author margo
  */
-public class TallerUML {
-
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class HistoriaClinica {
+    protected int nro;
+    protected ArrayList enfermedades;
+    protected ArrayList alergias;
+    protected ArrayList otros;
     
-}
+    protected Paciente paciente;
