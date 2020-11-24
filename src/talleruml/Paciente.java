@@ -12,11 +12,15 @@ import java.util.Date;
  * @author Rafael
  */
 public class Paciente extends Persona{
-    private String email;
-    public Paciente(String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fecNac, String email) {
+    protected String email;
+    protected HistoriaClinica historial;
+    protected Receta receta;
+    public Paciente(String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fecNac, String email, HistoriaClinica historial, Receta receta) {
         super(usuario, clave, nombre, apellido, cedula, direccion, fecNac);
         this.email = email;
-    }
+        this.historial = historial;
+        this.receta = receta;
+    }   
     public boolean solicitarCita(){
         return true;
     }

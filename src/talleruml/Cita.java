@@ -10,13 +10,20 @@ package talleruml;
  * @author margo
  */
 public class Cita {
-    protected DateTime fecha;
+    protected Datetime fecha;
     protected boolean pagada;
     protected String registroPor ;
     
-    protected Paciente paciente;
+    protected Paciente paciente; //creo que en Paciente va Cita
+
+    public Cita(Datetime fecha, boolean pagada, String registroPor) {
+        this.fecha = fecha;
+        this.pagada = pagada;
+        this.registroPor = registroPor;
+    }
+    
     
     public Pago realizarPago (Pago pago){
-        
+        return pago;
     }
 }

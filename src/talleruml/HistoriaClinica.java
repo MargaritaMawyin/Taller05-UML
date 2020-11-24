@@ -16,5 +16,14 @@ public class HistoriaClinica {
     protected ArrayList enfermedades;
     protected ArrayList alergias;
     protected ArrayList otros;
+   
+    //protected Paciente paciente; creo que en paciente va HistoriaClinica
+
+    public HistoriaClinica(int nro, ArrayList enfermedades, ArrayList alergias, ArrayList otros) {
+        this.nro = nro;
+        this.enfermedades = enfermedades;
+        this.alergias = alergias;
+        this.otros = otros;
+    }
     
-    protected Paciente paciente;
+}

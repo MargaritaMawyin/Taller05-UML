@@ -12,13 +12,15 @@ import java.util.Date;
  * @author Rafael
  */
 public class Doctor extends Persona{
-    private int regDoctor;
-    private String especialidad;
+    protected int regDoctor;
+    protected String especialidad;
+    protected Secretaria secretaria;
 
-    public Doctor(String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fecNac, int regDoctor, String especialidad) {
+    public Doctor(String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fecNac, int regDoctor, String especialidad, Secretaria secretaria) {
         super(usuario, clave, nombre, apellido, cedula, direccion, fecNac);
         this.regDoctor = regDoctor;
         this.especialidad = especialidad;
+        this.secretaria = secretaria;
     }
     public void recetar(){
         
