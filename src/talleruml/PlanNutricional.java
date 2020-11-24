@@ -13,4 +13,27 @@ public class PlanNutricional {
     protected String descripcion;
    
     protected Receta receta;
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public Receta getReceta() {
+        return receta;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public void setReceta(Receta receta) {
+        this.receta = receta;
+    }
+
+    public PlanNutricional(String descripcion, Receta receta) {
+        this.descripcion = descripcion;
+        this.receta = receta;
+    }
+    
+    
 }

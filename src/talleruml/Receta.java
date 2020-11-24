@@ -6,6 +6,7 @@
 package talleruml;
 
 import org.joda.time.DateTime;
+import java.util.Collection;
 
 /**
  *
@@ -14,5 +15,30 @@ import org.joda.time.DateTime;
 public class Receta {
     protected DateTime fecha;
     
+    protected Paciente paciente;
+    
     protected java.util.Collection PlanNutricional;
+
+    public DateTime getFecha() {
+        return fecha;
+    }
+
+    public Collection getPlanNutricional() {
+        return PlanNutricional;
+    }
+
+    public void setFecha(DateTime fecha) {
+        this.fecha = fecha;
+    }
+
+    public void setPlanNutricional(Collection PlanNutricional) {
+        this.PlanNutricional = PlanNutricional;
+    }
+
+    public Receta(DateTime fecha, Collection PlanNutricional) {
+        this.fecha = fecha;
+        this.PlanNutricional = PlanNutricional;
+    }
+    
+    
 }

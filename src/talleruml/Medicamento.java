@@ -17,4 +17,63 @@ public class Medicamento {
     protected String unidad;
     
     protected Receta receta;
+
+    public String getMedicina() {
+        return medicina;
+    }
+
+    public String getDosis() {
+        return dosis;
+    }
+
+    public String getOnservaciones() {
+        return onservaciones;
+    }
+
+    public int getCantidadTotal() {
+        return cantidadTotal;
+    }
+
+    public String getUnidad() {
+        return unidad;
+    }
+
+    public Receta getReceta() {
+        return receta;
+    }
+
+    public void setMedicina(String medicina) {
+        this.medicina = medicina;
+    }
+
+    public void setDosis(String dosis) {
+        this.dosis = dosis;
+    }
+
+    public void setOnservaciones(String onservaciones) {
+        this.onservaciones = onservaciones;
+    }
+
+    public void setCantidadTotal(int cantidadTotal) {
+        this.cantidadTotal = cantidadTotal;
+    }
+
+    public void setUnidad(String unidad) {
+        this.unidad = unidad;
+    }
+
+    public void setReceta(Receta receta) {
+        this.receta = receta;
+    }
+
+    public Medicamento(String medicina, String dosis, String onservaciones, int cantidadTotal, String unidad, Receta receta) {
+        this.medicina = medicina;
+        this.dosis = dosis;
+        this.onservaciones = onservaciones;
+        this.cantidadTotal = cantidadTotal;
+        this.unidad = unidad;
+        this.receta = receta;
+    }
+    
+    
 }
