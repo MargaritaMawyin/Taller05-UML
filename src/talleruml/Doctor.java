@@ -5,6 +5,7 @@
  */
 package talleruml;
 
+import java.util.Collection;
 import java.util.Date;
 
 /**
@@ -16,12 +17,18 @@ public class Doctor extends Persona{
     protected String especialidad;
     protected Secretaria secretaria;
 
-    public Doctor(String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fecNac, int regDoctor, String especialidad, Secretaria secretaria) {
+    protected java.util.Collection citasPendientes;
+    protected java.util.Collection recetas;
+
+    public Doctor(int regDoctor, String especialidad, Secretaria secretaria, Collection citasPendientes, String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fecNac) {
         super(usuario, clave, nombre, apellido, cedula, direccion, fecNac);
         this.regDoctor = regDoctor;
         this.especialidad = especialidad;
         this.secretaria = secretaria;
+        this.citasPendientes = citasPendientes;
     }
+    
+    
     public void recetar(){
         
     }

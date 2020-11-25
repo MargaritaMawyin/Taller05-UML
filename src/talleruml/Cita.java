@@ -16,7 +16,12 @@ public class Cita {
     protected boolean pagada;
     protected String registroPor ;
     
-    protected Paciente paciente; //creo que en Paciente va Cita
+    protected Paciente paciente; 
+    protected Doctor dr;
+    
+    public Cita (AreaMedica areaMedica){
+        
+    }
 
     public Cita(DateTime fecha, boolean pagada, String registroPor) {
         this.fecha = fecha;

@@ -12,6 +12,7 @@ import java.util.Date;
  * @author Rafael
  */
 public class Secretaria extends Persona{
+    protected java.util.Collection citasPendientes;
     
     public Secretaria(String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fecNac) {
         super(usuario, clave, nombre, apellido, cedula, direccion, fecNac);
