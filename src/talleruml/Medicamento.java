@@ -16,8 +16,6 @@ public class Medicamento {
     protected int cantidadTotal;
     protected String unidad;
     
-    protected Receta receta;
-
     public String getMedicina() {
         return medicina;
     }
@@ -36,10 +34,6 @@ public class Medicamento {
 
     public String getUnidad() {
         return unidad;
-    }
-
-    public Receta getReceta() {
-        return receta;
     }
 
     public void setMedicina(String medicina) {
@@ -62,17 +56,13 @@ public class Medicamento {
         this.unidad = unidad;
     }
 
-    public void setReceta(Receta receta) {
-        this.receta = receta;
-    }
 
-    public Medicamento(String medicina, String dosis, String onservaciones, int cantidadTotal, String unidad, Receta receta) {
+    public Medicamento(String medicina, String dosis, String onservaciones, int cantidadTotal, String unidad) {
         this.medicina = medicina;
         this.dosis = dosis;
         this.onservaciones = onservaciones;
         this.cantidadTotal = cantidadTotal;
         this.unidad = unidad;
-        this.receta = receta;
     }
     
     

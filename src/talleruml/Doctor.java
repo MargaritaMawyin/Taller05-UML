@@ -15,16 +15,14 @@ import java.util.Date;
 public class Doctor extends Persona{
     protected int regDoctor;
     protected String especialidad;
-    protected Secretaria secretaria;
 
     protected java.util.Collection citasPendientes;
     protected java.util.Collection recetas;
 
-    public Doctor(int regDoctor, String especialidad, Secretaria secretaria, Collection citasPendientes, String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fecNac) {
-        super(usuario, clave, nombre, apellido, cedula, direccion, fecNac);
+    public Doctor(int regDoctor, String especialidad, Collection citasPendientes, String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fecNac, Administrador admin) {
+        super(usuario, clave, nombre, apellido, cedula, direccion, fecNac, admin);
         this.regDoctor = regDoctor;
         this.especialidad = especialidad;
-        this.secretaria = secretaria;
         this.citasPendientes = citasPendientes;
     }
     

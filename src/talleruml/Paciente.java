@@ -5,7 +5,9 @@
  */
 package talleruml;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  *
@@ -14,15 +16,21 @@ import java.util.Date;
 public class Paciente extends Persona{
     protected String email;
     protected HistoriaClinica historial;
-    protected Receta receta;
+    protected List<Receta> recetas;
     protected Cita cita;
-    public Paciente(String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fecNac, String email, HistoriaClinica historial, Receta receta, Cita cita) {
-        super(usuario, clave, nombre, apellido, cedula, direccion, fecNac);
+    public Paciente(String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fecNac, String email, Cita cita, Administrador admin) {
+        super(usuario, clave, nombre, apellido, cedula, direccion, fecNac, admin);
         this.email = email;
-        this.historial = historial;
-        this.receta = receta;
+        this.historial = new HistoriaClinica();
+        this.recetas = new ArrayList<Receta>();
         this.cita = cita;
-    }   
+    } 
+
+    public Paciente(String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fecNac, Administrador admin) {
+        super(usuario, clave, nombre, apellido, cedula, direccion, fecNac, admin);
+    }
+    
+    
     public boolean solicitarCita(){
         return true;
     }

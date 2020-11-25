@@ -26,4 +26,7 @@ public class HistoriaClinica {
         this.otros = otros;
     }
     
+    public HistoriaClinica(){
+        
+    }
 }

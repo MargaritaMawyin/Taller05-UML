@@ -13,9 +13,12 @@ import java.util.Date;
  */
 public class Secretaria extends Persona{
     protected java.util.Collection citasPendientes;
+    protected Doctor doctor;
+    protected Cita cita;
     
-    public Secretaria(String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fecNac) {
-        super(usuario, clave, nombre, apellido, cedula, direccion, fecNac);
+    public Secretaria(String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fecNac, Cita cita, Administrador admin) {
+        super(usuario, clave, nombre, apellido, cedula, direccion, fecNac, admin);
+        this.cita = cita;
     }
     public void verificarCita(){
         
@@ -24,4 +27,7 @@ public class Secretaria extends Persona{
         
     }
     
+    public void setDoctor(Doctor doctor){
+        this.doctor = doctor;
+    }
 }

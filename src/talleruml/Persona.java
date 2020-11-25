@@ -19,8 +19,9 @@ public class Persona {
     protected String cedula;
     protected String direccion;
     protected Date fecNac;
+    protected Administrador admin;
 
-    public Persona(String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fecNac) {
+    public Persona(String usuario, String clave, String nombre, String apellido, String cedula, String direccion, Date fecNac, Administrador admin) {
         this.usuario = usuario;
         this.clave = clave;
         this.nombre = nombre;
@@ -28,6 +29,7 @@ public class Persona {
         this.cedula = cedula;
         this.direccion = direccion;
         this.fecNac = fecNac;
+        this.admin = admin;
     }
     public boolean logIn(){
         return true;

@@ -19,14 +19,21 @@ public class Cita {
     protected Paciente paciente; 
     protected Doctor dr;
     
-    public Cita (AreaMedica areaMedica){
-        
+    public Cita (){
     }
 
     public Cita(DateTime fecha, boolean pagada, String registroPor) {
         this.fecha = fecha;
         this.pagada = pagada;
         this.registroPor = registroPor;
+    }
+
+    public Cita(DateTime fecha, boolean pagada, String registroPor, Paciente paciente, Doctor dr) {
+        this.fecha = fecha;
+        this.pagada = pagada;
+        this.registroPor = registroPor;
+        this.paciente = paciente;
+        this.dr = dr;
     }
     
     
